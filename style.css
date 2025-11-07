@@ -1,6 +1,9 @@
 body {
   background-color: powderblue;
 }
+header{
+  background-color: red;
+}
 h1 {
   color: blue;
 }
