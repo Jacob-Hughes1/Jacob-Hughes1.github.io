@@ -13,3 +13,8 @@ p {
 aside{
   border: 5px solid violet;
 }
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
