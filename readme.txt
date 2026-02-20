@@ -1,3 +1,7 @@
+This is my Games Design and Programming Portolio 
+
+To help me create this, I used a template which you can read about here:
+
 Phantom by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
