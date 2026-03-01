@@ -55,7 +55,13 @@
 							<p>The main game loop consists of mining ores around the level using a mining laser, these ores can then be used inside of the shop system to upgrade the player character’s tank.</p>
 							<p>These upgrades included: More powerful laser, Bombs and Flares.</p>
 							<p>Ore can also be used to heal the tank if it has taken any damage.</p>
-							<h1>Design Work</h1>
+							<h2>Key Design Decisions:</h2>
+							<ul>
+								<li>To create a good sense of progression, ores are easily obtained from both mining and killing enemies.</li>
+								<li>The cost of the laser upgrades goes up by 10 each time the laser is upgraded, as this scales well with the amount of enemies in the later parts of the level and gives room for the player to afford flares and bombs along the way.</li>
+								<li>Flares are cheap to buy, but quick to run out to force the player to use them at the correct time or risk low visibility.</li>
+							</ul>
+							<h1>Design Diagrams</h1>
 							<h3>Enemy Miner</h3>
 							<div class="box alt">
 										<div class="row gtr-uniform">                                                                                                     
@@ -68,20 +74,18 @@
 										</div>
 										<h3>Enemy Bomber</h3>
 										<div class="row gtr-uniform">
-											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide7.JPG" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide8.JPG" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide9.JPG" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide7.JPG" alt="" /><p>Bombers are the infected defensive systems set up by the mining company, when they spot uninfected mining bots, they enter a panicked defensive state and drop bombs randomly. </p></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide8.JPG" alt="" /><p>When not detecting any uninfected bots, they remain dormant in power saving mode. </p></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide9.JPG" alt="" /><p>Upon detecting an uninfected bot, it moves around randomly and drops bombs in an attempt to stop the player. If the bombs are collided with or shot, they explode dealing significant damage to and surrounding entities.</p></span></div>
 											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide10.JPG" alt=""/></span></div>
 											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide11.JPG" alt=""/></span></div>
 											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide12.JPG" alt=""/></span></div>
 										</div>
 										<h3>Player Mining</h3>
 										<div class="row gtr-uniform">
-											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/playermining/Slide1.JPG" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/playermining/Slide2.JPG" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/playermining/Slide3.JPG" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/playermining/Slide4.JPG" alt=""/></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/playermining/Slide5.JPG" alt=""/></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/playermining/Slide1.JPG" alt="" /><p>When the player holds the left mouse button, a laser instantly begins firing out of the tank, this was originally tested with a wind up for a few seconds, but it made the tank controls feel sluggish and clunky especially during combat sections so it was changed to have no wind up.</p></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/playermining/Slide2.JPG" alt="" /><p>When destroyed, the ore into multiple chunks which creates a satisfying effect of it breaking into chunks.</p></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/playermining/Slide3.JPG" alt="" /><p>The small ore pieces fly towards the player automatically, this prevents the player having to waste time picking everything up off of the floor. It also creates a much more satisfying mining experience.</p></span></div>
 										</div>
 							</div>		
 						</div>
