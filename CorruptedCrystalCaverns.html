@@ -12,6 +12,33 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	
+	<style>
+	.inner
+	{
+		width:100%;
+	}
+	.left
+	{
+		float:left;
+		width:50%;
+		box-sizing:border-box;
+		padding:5px;
+		border:#ADC9C7 solid 1px;
+		min-height:200px;
+	}
+
+	.right
+	{
+		float:left;
+		width:50%;
+		box-sizing:border-box;
+		padding:5px;
+		border:#ADC9C7 solid 1px;
+		min-height:200px;
+	}
+	</style>
+	
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -19,11 +46,18 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="inner">
+						<div class = "left">
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
 									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Jacob Hughes<br>Games Designer and Programmer</span>
 								</a>
+									<h1>Corrupted Crystal Caverns</h1>
+									<h2>Unreal Engine 5 Group Project</h2>
+								</div>
+								<div class = "right">
+								<img src="images/shopscreenpic.jpg" alt="" style="max-width: 100%; max-height: 100vh; width: auto; margin: auto;">
+								</div>
 
 							<!-- Nav -->
 								<nav>
@@ -47,10 +81,7 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Corrupted Crystal Caverns</h1>
-							<h2>Unreal Engine 5 Solo Project</h2>
-							<img src="images/shopscreenpic.jpg" alt="" style="max-width: 100%; max-height: 100vh; width: auto; margin: auto;">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/zhEmY83Ipq8?si=xoNLMAP8ttLTgJyH" title="Corrupted Crystal Caverns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							<iframe style="max-width: 100%; aspect-ratio: 16/9; width:auto; height:auto; margin: auto;" src="https://www.youtube.com/embed/zhEmY83Ipq8?si=xoNLMAP8ttLTgJyH&autoplay=1&mute=1" title="Corrupted Crystal Caverns" frameborder="0" allow="accelerometer; autoplay=1; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							<a href="https://youtu.be/zhEmY83Ipq8?si=ww53dO_SYlEut2rX" target="_blank "class="button primary fit">FULL GAMEPLAY VIDEO</a>
 							<p>Made as part of my Mechanics Prototyping module in my first year at University of Staffordshire, Corrupted Crystal Caverns is a top-down shooter and mining game. My work on this project was primarily design work, including using Unreal Engine Blueprint systems to create the game mechanics.</p>
 							<p>The main game loop consists of mining ores around the level using a mining laser, these ores can then be used inside of the shop system to upgrade the player character’s tank.</p>

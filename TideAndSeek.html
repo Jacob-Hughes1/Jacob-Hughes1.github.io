@@ -12,6 +12,31 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<style>
+	.inner
+	{
+		width:100%;
+	}
+	.left
+	{
+		float:left;
+		width:50%;
+		box-sizing:border-box;
+		padding:5px;
+		border:#ADC9C7 solid 1px;
+		min-height:200px;
+	}
+
+	.right
+	{
+		float:left;
+		width:50%;
+		box-sizing:border-box;
+		padding:5px;
+		border:#ADC9C7 solid 1px;
+		min-height:200px;
+	}
+	</style>
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -19,11 +44,18 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="inner">
+						<div class = "left">
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
 									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Jacob Hughes<br>Games Designer and Programmer</span>
 								</a>
+									<h1>Tide and Seek</h1>
+									<h2>Unity Engine Solo Project</h2>
+								</div>
+								<div class = "right">
+								<img src="images/tideandseek.jpg" alt="" style="max-width: 100%; max-height: 100vh; width: auto; margin: auto;">
+								</div>
 
 							<!-- Nav -->
 								<nav>
@@ -47,10 +79,7 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Tide and Seek</h1>
-							<h2>Unity Engine Solo Project</h2>
-							<img src="images/tideandseek.jpg" alt="" style="max-width: 100%; max-height: 100vh; width: auto; margin: auto;">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/NQ1pRdaX0sg?si=HYMcN6eWHj9Vvbd8" title="Tide and Seek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe style="max-width: 100%; aspect-ratio: 16/9; width:auto; height:auto; margin: auto;" src="https://www.youtube.com/embed/NQ1pRdaX0sg?si=HYMcN6eWHj9Vvbd8&autoplay=1&mute=1" title="Tide and Seek" frameborder="0" allow="accelerometer; autoplay=1; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							<a href="https://youtu.be/NQ1pRdaX0sg?si=BWNqmmBL9mncuQOU" target="_blank "class="button primary fit">FULL GAMEPLAY VIDEO</a>
 							<p>Made as part of my Games Prototyping Module in my second year at University of Staffordshire, Tide and Seek is a stealth game about a cuttlefish trying to save his Dad from a gang of sharks.</p>
 							<p>I used the C# Language within Unity to create the mechanics, including using scriptable objects as part of my cutscene system.</p>

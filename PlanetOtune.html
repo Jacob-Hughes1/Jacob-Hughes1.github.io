@@ -12,6 +12,31 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<style>
+	.inner
+	{
+		width:100%;
+	}
+	.left
+	{
+		float:left;
+		width:50%;
+		box-sizing:border-box;
+		padding:5px;
+		border:#ADC9C7 solid 1px;
+		min-height:200px;
+	}
+
+	.right
+	{
+		float:left;
+		width:50%;
+		box-sizing:border-box;
+		padding:5px;
+		border:#ADC9C7 solid 1px;
+		min-height:200px;
+	}
+	</style>
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -19,11 +44,18 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="inner">
+						<div class = "left">
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
 									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Jacob Hughes<br>Games Designer and Programmer</span>
 								</a>
+									<h1>Planet Otune</h1>
+									<h2>Unreal Engine 4 Group Project</h2>
+								</div>
+								<div class = "right">
+								<img src="images/otunepic.jpg" alt="" style="max-width: 100%; max-height: 100vh; width: auto; margin: auto;">
+								</div>
 
 							<!-- Nav -->
 								<nav>
@@ -47,11 +79,8 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Planet Otune</h1>
-							<h2>Unreal Engine 4 Group Project</h2>
-							<img src="images/otunepic.jpg" alt="" style="max-width: 100%; max-height: 100vh; width: auto; margin: auto;">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/SRfSv3KOngY?si=9Iwcoa2SqVngn6JS" title="Planet Otune" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-								<a href="https://youtu.be/SRfSv3KOngY" target="_blank "class="button primary fit">FULL GAMEPLAY VIDEO</a>
+						<iframe style="max-width: 100%; aspect-ratio: 16/9; width:auto; height:auto; margin: auto;" src="https://www.youtube.com/embed/SRfSv3KOngY?si=9Iwcoa2SqVngn6JS&autoplay=1&mute=1" title="Planet Otune" frameborder="0" allow="accelerometer; autoplay=1; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							<a href="https://youtu.be/SRfSv3KOngY" target="_blank "class="button primary fit">FULL GAMEPLAY VIDEO</a>
 							<p>Made as part of a 4-person group for my Genre Swap project of my Games Design course at South Staffordshire College. This game was made using Unreal Engine 4.</p>
 							<p>As part of my 4 person group, I had worked with 2 artists and a music producer. I was the designer of this project. As part of my role, I did all the in-engine development, systems designs and mechanic creation.</p>
 							<p>Planet Otune is a single-player first person shooter game about a soldier being sent down to eradicate dangerous aliens. The game features cutscene sequences made using timelines, camera rig rails and widget elements for dialogue.</p>
