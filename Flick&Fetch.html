@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jacob Hughes - Corrutped Crystal Caverns</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	
+	<style>
+	.inner
+	{
+		width:100%;
+	}
+	.left
+	{
+		float:left;
+		width:50%;
+		box-sizing:border-box;
+		padding:5px;
+		border:#ADC9C7 solid 0px;
+		min-height:200px;
+	}
+
+	.right
+	{
+		float:left;
+		width:50%;
+		box-sizing:border-box;
+		padding:5px;
+		border:#ADC9C7 solid 0px;
+		min-height:200px;
+	}
+	</style>
+	
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+						<div class = "left">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Jacob Hughes<br>Games Designer and Programmer</span>
+								</a>
+									<h1>Corrupted Crystal Caverns</h1>
+									<h2>Unreal Engine 5 Solo Project</h2>
+								</div>
+								<div class = "right">
+								<img src="images/shopscreenpic.jpg" alt="" style="max-width: 100%; max-height: 100vh; width: auto; margin: auto;">
+								</div>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<iframe style="max-width: 100%; aspect-ratio: 16/9; width:auto; height:auto; margin: auto;" src="https://www.youtube.com/embed/zhEmY83Ipq8?si=xoNLMAP8ttLTgJyH&autoplay=1&mute=1" title="Corrupted Crystal Caverns" frameborder="0" allow="accelerometer; autoplay=1; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							<a href="https://youtu.be/zhEmY83Ipq8?si=ww53dO_SYlEut2rX" target="_blank "class="button primary fit">FULL GAMEPLAY VIDEO</a>
+							<p>Made as part of my Mechanics Prototyping module in my first year at University of Staffordshire, Corrupted Crystal Caverns is a top-down shooter and mining game. My work on this project was primarily design work, including using Unreal Engine Blueprint systems to create the game mechanics.</p>
+							<p>The main game loop consists of mining ores around the level using a mining laser, these ores can then be used inside of the shop system to upgrade the player character’s tank.</p>
+							<p>These upgrades included: More powerful laser, Bombs and Flares.</p>
+							<p>Ore can also be used to heal the tank if it has taken any damage.</p>
+							<h2>Key Design Decisions:</h2>
+							<ul>
+								<li>To create a good sense of progression, ores are easily obtained from both mining and killing enemies.</li>
+								<li>The cost of the laser upgrades goes up by 10 each time the laser is upgraded, as this scales well with the amount of enemies in the later parts of the level and gives room for the player to afford flares and bombs along the way.</li>
+								<li>Flares are cheap to buy, but quick to run out to force the player to use them at the correct time or risk low visibility.</li>
+							</ul>
+							<h1>Design Diagrams</h1>
+							<h3>Enemy Miner</h3>
+							<div class="box alt">
+										<div class="row gtr-uniform">                                                                                                     
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide1.JPG" alt="" /><p>The enemies have the same model as the player as they are from the same mining company, however they have been modified with infectious ore sticking out of their chasis after being stuck in the mines with the infection.</p></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide2.JPG" alt="" /><p>Enemies linger in a zombie-like mindless state, their goal is to protect the ore over anything else.</p></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide3.JPG" alt="" /><p>Once the enemies detect the player, they enter an attack state, keeping close to the player but moving manically around, attempting to destroy the player and eliminate the threat to the ore.</p></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide4.JPG" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide5.JPG" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide6.JPG" alt="" /></span></div>
+										</div>
+										<p><br></p>
+										<h3>Enemy Bomber</h3>
+										<div class="row gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide7.JPG" alt="" /><p>Bombers are the infected defensive systems set up by the mining company, when they spot uninfected mining bots, they enter a panicked defensive state and drop bombs randomly. </p></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide8.JPG" alt="" /><p>When not detecting any uninfected bots, they remain dormant in power saving mode. </p></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide9.JPG" alt="" /><p>Upon detecting an uninfected bot, it moves around randomly and drops bombs in an attempt to stop the player. If the bombs are collided with or shot, they explode dealing significant damage to and surrounding entities.</p></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide10.JPG" alt=""/></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide11.JPG" alt=""/></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/Slide12.JPG" alt=""/></span></div>
+										</div>
+										<p><br></p>
+										<h3>Player Mining</h3>
+										<div class="row gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/playermining/Slide1.JPG" alt="" /><p>When the player holds the left mouse button, a laser instantly begins firing out of the tank, this was originally tested with a wind up for a few seconds, but it made the tank controls feel sluggish and clunky especially during combat sections so it was changed to have no wind up.</p></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/playermining/Slide2.JPG" alt="" /><p>When destroyed, the ore into multiple chunks which creates a satisfying effect of it breaking into chunks.</p></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/cavernsdesigns/playermining/Slide3.JPG" alt="" /><p>The small ore pieces fly towards the player automatically, this prevents the player having to waste time picking everything up off of the floor. It also creates a much more satisfying mining experience.</p></span></div>
+										</div>
+							</div>		
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
