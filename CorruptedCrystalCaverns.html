@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Dopetrope by HTML5 UP</title>
+		<title>Corrupted Crystal Caverns - Jacob Hughes</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -56,103 +56,144 @@
 			<section id="main">
 				<div class="container">
 
-							<!-- Sidebar -->
-							<article class="box post">
-								<header>
-									<h2>Full Playthrough</h2>
-								</header>
-								<iframe style="max-width: 100%; aspect-ratio: 16/9; width:auto; height:auto; margin: auto;" src="https://www.youtube.com/embed/zhEmY83Ipq8?si=xoNLMAP8ttLTgJyH&amp;autoplay=1&amp;mute=1" title="Corrupted Crystal Caverns" frameborder="0" allow="accelerometer; autoplay=1; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-							</article>
-							<article class="box post">
-								<img src="images/Caverns/Caverns1.png" alt="" width="33%">
-								<img src="images/Caverns/Caverns2.png" alt="" width="33%">
-								<img src="images/Caverns/Caverns3.png" alt="" width="33%">
-								<img src="images/Caverns/Caverns4.png" alt="" width="33%">
-								<img src="images/Caverns/Caverns5.png" alt="" width="33%">
-							</article>
+					<!-- Sidebar -->
+					<header class="major">
+						<h2>Corrupted Crystal Caverns</h2>
+						<p>Unreal Engine 5 - Solo Project</p>
+					</header>
 
-							<!-- Content -->
-							<article class="box post">
-								<header>
-									<h2>Corrupted Crystal Caverns</h2>
-									<p>Unreal Engine 5 - Solo Project</p>
-								</header>
-								<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
-									<source src="videos/previews/Caverns.mp4" type="video/mp4">
-									Your browser does not support the video tag.
-								</video>
-								<section>
-									<header>
-										<h3>Overview</h3>
-									</header>
-									<p>
-										Made as part of my Mechanics Prototyping module in my first year at University of Staffordshire, Corrupted Crystal Caverns is a top-down shooter and mining game.<br>
-										My work on this project was primarily design work, including using Unreal Engine Blueprint systems to create the game mechanics.<br>
-										My work on this project was primarily design work, including using Unreal Engine Blueprint systems to create the game mechanics.<br>
-										The main game loop consists of mining ores around the level using a mining laser, these ores can then be used inside of the shop system to upgrade the player character’s tank.
-									</p>
-								</section>
-								<section>
-									<header>
-										<h3>Key Design Decisions</h3>
-									</header>
-									<p>
-										<ul>
-											<li>To create a good sense of progression, ores are easily obtained from both mining and killing enemies.</li>
-											<li>The cost of the laser upgrades goes up by 10 each time the laser is upgraded, as this scales well with the amount of enemies in the later parts of the level and gives room for the player to afford flares and bombs along the way.</li>
-											<li>Flares are cheap to buy, but quick to run out to force the player to use them at the correct time or risk low visibility.</li>
-										</ul>
-									</p>
-								</section>
-							</article>
-
-							<header class="major">
-								<h2>DESIGN DIAGRAMS</h2>
+					<!-- Content -->
+					<article class="box post">
+						<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
+							<source src="videos/previews/Caverns.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<section>
+							<header>
+								<h3>Overview</h3>
 							</header>
-							<article class="box post">
-								<header>
-									<h1>Enemy Miner</h1>
-								</header>
-								<p>The standard enemies, they have the same model as the player as they are from the same mining company, however they have been modified with infectious ore sticking out of their chasis after being stuck in the mines with the infection.</p>
-								<p>Enemies linger in a zombie-like mindless state, their goal is to protect the ore over anything else.</p>
-								<p>Once the enemies detect the player, they enter an attack state, keeping close to the player but moving manically around, attempting to destroy the player and eliminate the threat to the ore.</p>
-								<img src="images/cavernsdesigns/Slide1.JPG" alt="" width="33%">
-								<img src="images/cavernsdesigns/Slide2.JPG" alt="" width="33%">
-								<img src="images/cavernsdesigns/Slide3.JPG" alt="" width="33%">
-								<img src="images/cavernsdesigns/Slide4.JPG" alt="" width="33%">
-								<img src="images/cavernsdesigns/Slide5.JPG" alt="" width="33%">
-								<img src="images/cavernsdesigns/Slide6.JPG" alt="" width="33%">
-							</article>
+							<p>
+								Made as part of my Mechanics Prototyping module in my first year at University of Staffordshire, Corrupted Crystal Caverns is a top-down shooter and mining game.<br>
+								My work on this project was primarily design work, including using Unreal Engine Blueprint systems to create the game mechanics.<br>
+								The main game loop consists of mining ores around the level using a mining laser, these ores can then be used inside of the shop system to upgrade the player character.
+							</p>
+						</section>
+					</article>
 
-							<article class="box post">
-								<header>
-									<h1>Enemy Bomber</h1>
-								</header>
-								<p>Bombers are the infected defensive systems set up by the mining company, when they spot uninfected mining bots, they enter a panicked defensive state and drop bombs randomly.</p>
-								<p>When not detecting any uninfected bots, they remain dormant in power saving mode.</p>
-								<p>Upon detecting an uninfected bot, it moves around randomly and drops bombs in an attempt to stop the player. If the bombs are collided with or shot, they explode dealing significant damage to and surrounding entities.</p>
-								<img src="images/cavernsdesigns/Slide7.JPG" alt="" width="33%">
-								<img src="images/cavernsdesigns/Slide8.JPG" alt="" width="33%">
-								<img src="images/cavernsdesigns/Slide9.JPG" alt="" width="33%">
-								<img src="images/cavernsdesigns/Slide10.JPG" alt="" width="33%">
-								<img src="images/cavernsdesigns/Slide11.JPG" alt="" width="33%">
-								<img src="images/cavernsdesigns/Slide12.JPG" alt="" width="33%">
-							</article>
+					<div class="col-12">
+						<section>
+							<header class="major">
+								<h2>KEY DESIGN FEATURES</h2>
+							</header>
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<section class="box">
+										<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
+											<source src="videos/caverns/ShopShowcase.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+										<header>
+											<h3>Shop System</h3>
+										</header>
+										<p>The player can collect ore from crystals and enemies which can be used to: Upgrade laser, Fix your armour, Buy flares or Buy bombs.<br>Resources are limited so the player must make informed decisions on what to purchase based on their situation.</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-small">
+									<section class="box">
+										<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
+											<source src="videos/caverns/FlareShowcase.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+										<header>
+											<h3>Flare Lighting</h3>
+										</header>
+										<p>The level is mostly dark, in order to navigate effectively, the player must use flares to light up their path.<br>Flares only last for a limited amount of time so the player must think carefully about the correct momements to use them.</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-small">
+									<section class="box">
+										<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
+											<source src="videos/caverns/CrystalShowcase.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+										<header>
+											<h3>Large Crystal Mining</h3>
+										</header>
+										<p>Large Crystals serve a few purposes: Give the player down time between tense moments, showcase the power of the laser, provide resources, communicate to the player where they have yet to explore.</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-small">
+									<section class="box">
+										<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
+											<source src="videos/caverns/BombsShowcase.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+										<header>
+											<h3>Environmental Hazards</h3>
+										</header>
+										<p>Mining bombs and explosive barrels can be found around the level and are dropped by the bomber enemy. These act as both a hazard to avoid and a tool for the player to use against the enemies within the level.</p>
+									</section>
+								</div>
+							</div>
+						</section>
+
+					</div>
 
 
-							<article class="box post">
-								<header>
-									<h1>Player Mining</h1>
-								</header>
-								<p>When the player holds the left mouse button, a laser instantly begins firing out of the tank, this was originally tested with a wind up for a few seconds, but it made the tank controls feel sluggish and clunky especially during combat sections so it was changed to have no wind up.</p>
-								<img src="images/cavernsdesigns/playermining/Slide1.JPG" alt="" width="100%">
-								<p>When destroyed, the ore into multiple chunks which creates a satisfying effect of it breaking into chunks.</p>
-								<img src="images/cavernsdesigns/playermining/Slide2.JPG" alt="" width="100%">
-								<p>The small ore pieces fly towards the player automatically, this prevents the player having to waste time picking everything up off of the floor. It also creates a much more satisfying mining experience.</p>
-								<img src="images/cavernsdesigns/playermining/Slide3.JPG" alt="" width="100%">
-							</article>
+					<header class="major">
+						<h2>FULL PLAYTHROUGH</h2>
+					</header>
+					<article class="box post">
+						<iframe style="max-width: 100%; aspect-ratio: 16/9; width:auto; height:auto; margin: auto;" src="https://www.youtube.com/embed/zhEmY83Ipq8?si=xoNLMAP8ttLTgJyH&amp;autoplay=1&amp;mute=1" title="Corrupted Crystal Caverns" frameborder="0" allow="accelerometer; autoplay=1; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+					</article>
 
-						</div>
+					<header class="major">
+						<h2>DESIGN DIAGRAMS</h2>
+					</header>
+					<article class="box post">
+						<header>
+							<h1>Enemy Miner</h1>
+						</header>
+						<p>The standard enemies, they have the same model as the player as they are from the same mining company, however they have been modified with infectious ore sticking out of their chasis after being stuck in the mines with the infection.</p>
+						<p>Enemies linger in a zombie-like mindless state, their goal is to protect the ore over anything else.</p>
+						<p>Once the enemies detect the player, they enter an attack state, keeping close to the player but moving manically around, attempting to destroy the player and eliminate the threat to the ore.</p>
+						<img src="images/cavernsdesigns/Slide1.JPG" alt="" width="33%">
+						<img src="images/cavernsdesigns/Slide2.JPG" alt="" width="33%">
+						<img src="images/cavernsdesigns/Slide3.JPG" alt="" width="33%">
+						<img src="images/cavernsdesigns/Slide4.JPG" alt="" width="33%">
+						<img src="images/cavernsdesigns/Slide5.JPG" alt="" width="33%">
+						<img src="images/cavernsdesigns/Slide6.JPG" alt="" width="33%">
+					</article>
+
+					<article class="box post">
+						<header>
+							<h1>Enemy Bomber</h1>
+						</header>
+						<p>Bombers are the infected defensive systems set up by the mining company, when they spot uninfected mining bots, they enter a panicked defensive state and drop bombs randomly.</p>
+						<p>When not detecting any uninfected bots, they remain dormant in power saving mode.</p>
+						<p>Upon detecting an uninfected bot, it moves around randomly and drops bombs in an attempt to stop the player. If the bombs are collided with or shot, they explode dealing significant damage to and surrounding entities.</p>
+						<img src="images/cavernsdesigns/Slide7.JPG" alt="" width="33%">
+						<img src="images/cavernsdesigns/Slide8.JPG" alt="" width="33%">
+						<img src="images/cavernsdesigns/Slide9.JPG" alt="" width="33%">
+						<img src="images/cavernsdesigns/Slide10.JPG" alt="" width="33%">
+						<img src="images/cavernsdesigns/Slide11.JPG" alt="" width="33%">
+						<img src="images/cavernsdesigns/Slide12.JPG" alt="" width="33%">
+					</article>
+
+
+					<article class="box post">
+						<header>
+							<h1>Player Mining</h1>
+						</header>
+						<p>When the player holds the left mouse button, a laser instantly begins firing out of the tank, this was originally tested with a wind up for a few seconds, but it made the tank controls feel sluggish and clunky especially during combat sections so it was changed to have no wind up.</p>
+						<img src="images/cavernsdesigns/playermining/Slide1.JPG" alt="" width="100%">
+						<p>When destroyed, the ore into multiple chunks which creates a satisfying effect of it breaking into chunks.</p>
+						<img src="images/cavernsdesigns/playermining/Slide2.JPG" alt="" width="100%">
+						<p>The small ore pieces fly towards the player automatically, this prevents the player having to waste time picking everything up off of the floor. It also creates a much more satisfying mining experience.</p>
+						<img src="images/cavernsdesigns/playermining/Slide3.JPG" alt="" width="100%">
+					</article>
+
+				</div>
 				</section>
 
 			<!-- Footer -->
