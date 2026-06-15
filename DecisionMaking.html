@@ -64,8 +64,9 @@
 
 					<!-- Content -->
 					<article class="box post">
+						<iframe frameborder="0" src="https://itch.io/embed/4303931" width="552" height="167"><a href="https://hewzi.itch.io/ai-agent-decision-making-simulation">AI Agent Decision Making Simulation by Hewzi</a></iframe>
 						<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
-							<source src="videos/TideAndSeek/showreel.mp4" type="video/mp4">
+							<source src="videos/DecisionMaking/showreel.mp4" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>
 						<section>
@@ -73,10 +74,8 @@
 								<h3>Overview</h3>
 							</header>
 							<p>
-								Tide and Seek is a Top-Down Stealth game where you play as a cuttlefish with the ability to camoflauge.<br>
-								Your dad has been stolen, navigate through handcrafted levels avoiding sharks to get him back.<br>
-								Made as part of my second year at the University of Staffordshire, this project was created within the Unity Engine, using C# to create all mechanics.<br>
-								This game also features some some simple cutscene sequences, in which I utilised scriptable objects to create.<br>
+								This is a simulation that showcases an AI System I created using a Markov System to make decisions based on the agents current situation.<br>
+								Made as part of my Game Artificial Intelligence Module during my second year at the University of Staffordshire.
 							</p>
 						</section>
 					</article>
@@ -84,74 +83,84 @@
 					<div class="col-12">
 						<section>
 							<header class="major">
-								<h2>KEY DESIGN FEATURES</h2>
+								<h2>KEY SYSTEM FEATURES</h2>
 							</header>
 							<div class="row">
 								<div class="col-6 col-12-small">
 									<section class="box">
 										<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
-											<source src="videos/TideAndSeek/LevelShowcase.mp4" type="video/mp4">
+											<source src="videos/DecisionMaking/StateShowcase.mp4" type="video/mp4">
 											Your browser does not support the video tag.
 										</video>
 										<header>
-											<h3>Bite-Sized Levels</h3>
-										</header>
-										<p>Each level is a short section that utilises instant restarts to create fast paced, trial and error style puzzle-like gameplay similar to Hotline Miami.<br>Level layouts are designed to be quite tight to force the player to have to encounter the enemies.
-										<br><br>
-										</p>
-									</section>
-								</div>
-								<div class="col-6 col-12-small">
-									<section class="box">
-										<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
-											<source src="videos/TideAndSeek/DetectionShowcase.mp4" type="video/mp4">
-											Your browser does not support the video tag.
-										</video>
-										<header>
-											<h3>Fast Enemy Detection Time</h3>
-										</header>
-										<p>Enemies have a short meter that fills whenever the player is within their view, this gives the player a very short amount of time for them to get out of view.<br>
-										This encourages the player to stay completely out of sight as being detected will certainly result in failure.</p>
-									</section>
-								</div>
-								<div class="col-6 col-12-small">
-									<section class="box">
-										<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
-											<source src="videos/TideAndSeek/EnemyShowcase.mp4" type="video/mp4">
-											Your browser does not support the video tag.
-										</video>
-										<header>
-											<h3>High Enemy Density</h3>
+											<h3>AI Behaviour States</h3>
 										</header>
 										<p>
-											To ensure that the player has to focus on correct positioning and timing throughout the level, there is a high level of enemy density.<br>Enemy vision cones often overlap in order to create tight windows for the player to react and move to progress.
+											The system has multiple states, which it can exist in all at once due to the use of the Markov System.<br>
+											States include: Shooting, Fleeing, ItemPickup and Wander.<br>
+											Each state affects the behaviour of the agent at different levels dependant on it's 'activation amount'.
+											<br>
 										</p>
 									</section>
 								</div>
 								<div class="col-6 col-12-small">
 									<section class="box">
 										<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
-											<source src="videos/TideAndSeek/StoryShowcase.mp4" type="video/mp4">
+											<source src="videos/DecisionMaking/PriorityShowcase.mp4" type="video/mp4">
 											Your browser does not support the video tag.
 										</video>
 										<header>
-											<h3>Story Cutscenes</h3>
+											<h3>Item Priority</h3>
 										</header>
-										<p>Using scriptable objects, I created custom dialogue cutscenes which play between some of the levels.<br>The story is about a cuttlefish, his dad has been taken by a gang of sharks from his past and the player must save him.</p>
+										<p>
+											Whenever the AI agent detects an item in the level, it priorities which item it wants to go for based off of their current health and ammo values.<br>
+											The agent will take into account its desire for the item and prioritise the direction and speed it should be moving based off of nearby enemies.<br><br>
+										</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-small">
+									<section class="box">
+										<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
+											<source src="videos/DecisionMaking/AvoidanceShowcase.mp4">
+											Your browser does not support the video tag.
+										</video>
+										<header>
+											<h3>Smart Enemy Avoidance</h3>
+										</header>
+										<p>
+											To make the AI agent feel intelligent, it uses a radius around itself to detect nearby enemies. It then calculates that enemy velocity and flees from the area where it thinks the enemy will make contact, it also flees from the area of the enemy itself.
+											<br>
+											If there are multiple enemies within the agents detection radius, it will take an average of all of their positions and attempt to avoid that, this creates the effect where the agent is weaving between the zombies to get away.
+										</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-small">
+									<section class="box">
+										<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
+											<source src="videos/DecisionMaking/ZombieShowcase.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+										<header>
+											<h3>Zombie Behaviour</h3>
+										</header>
+										<p>
+											To improve the feel of the simulation, zombie behaviours were also tweaked to create 'mindless' feeling behaviour.
+											<br>
+											Zombies use a simple finite state machine, which causes them to only be in one state at a time. The three main zombie states are wander, pursue and seek. The combination of these states create the effect that the zombie becomes
+											locked onto the agent and then charges mindlessly at them.
+											<br><br>
+										</p>
 									</section>
 								</div>
 							</div>
 						</section>
-
 					</div>
-
-
 					<br>
 					<header class="major">
-						<h2>FULL PLAYTHROUGH</h2>
+						<h2>FULL SHOWCASE</h2>
 					</header>
 					<article class="box post">
-						<iframe style="max-width: 100%; aspect-ratio: 16/9; width:auto; height:auto; margin: auto;" src="https://www.youtube.com/embed/NQ1pRdaX0sg?si=rO0euf4dpfJSVC3I;autoplay=1&amp;mute=1" title="Corrupted Crystal Caverns" frameborder="0" allow="accelerometer; autoplay=1; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+						<iframe style="max-width: 100%; aspect-ratio: 16/9; width:auto; height:auto; margin: auto;" src="https://www.youtube.com/embed/gK_MGwxorhw?si=VzPfb9hpFjjnJnQ4;autoplay=1&amp;mute=1" title="Corrupted Crystal Caverns" frameborder="0" allow="accelerometer; autoplay=1; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
 					</article>
 					<br>
 				</div>
