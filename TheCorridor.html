@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>The Corridor - Jacob Hughes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<section id="header">
+
+				<!-- Logo -->
+				<h1><a href="index.html">Jacob Hughes</a></h1>
+				<h2><a href="index.html">Games Designer and Progammer</a></h2>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li class="current">
+							<a href="#">Games</a>
+							<ul>
+								<li><a href="FlickAndFetch.html">Flick & Fetch</a></li>
+								<li><a href="CorruptedCrystalCaverns.html">Corrupted Crystal Caverns</a></li>
+								<li><a href="BreakfastOnIce.html">Breakfast On Ice</a></li>
+								<li><a href="ShotgunMaster.html">Shotgun Master</a></li>
+								<li><a href="TideAndSeek.html">Tide And Seek</a></li>
+								<li><a href="Yoterad2.html">Yoterad 2: It's About Time</a></li>
+								<li><a href="PlanetOtune.html">Planet Otune</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Other Projects</a>
+							<ul>
+								<li><a href="DecisionMaking.html">AI Soldier Simualtion</a></li>
+								<li><a href="FocusTool.html">Focus Tool</a></li>
+								<li><a href="WFP.html">WFP Food System Minigames</a></li>
+							</ul>
+						</li>
+						<li><a href="https://jacobhughesmakesgames.substack.com/" target="_blank">Dev Logs</a></li>
+						<li><a href="aboutme.html">About Me</a></li>
+					</ul>
+				</nav>
+
+			</section>
+
+			<!-- Main -->
+			<section id="main">
+				<div class="container">
+
+					<!-- Sidebar -->
+					<header class="major">
+						<h2>The Corridor</h2>
+						<p>Unreal Engine 5 - Group Game Jam Project</p>
+					</header>
+
+					<!-- Content -->
+					<article class="box post">
+						<iframe frameborder="0" src="https://itch.io/embed/4827380" width="552" height="167"><a href="https://hewzi.itch.io/the-corridor">The Corridor by Hewzi</a></iframe>
+						<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
+							<source src="videos/previews/Caverns.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<section>
+							<header>
+								<h3>Overview</h3>
+							</header>
+							<p>
+								Corrupted Crystal Caverns is a top-down shooter and mining game, where the player must fight through a cave of corrupted mining bots while gathering ore and upgrading themselves.<br>
+								Made as part of my Mechanics Prototyping module during my first year at the University of Staffordshire.<br>
+								My work on this project was primarily design work, including using Unreal Engine Blueprint systems to create the game mechanics.<br>
+								The main game loop consists of mining ores around the level using a mining laser, these ores can then be used inside of the shop system to upgrade the player character.
+							</p>
+						</section>
+						<footer>
+							<a href="https://jacobhughesmakesgames.substack.com/p/the-corridor-development-log" class="button alt" target="_blank">Development Log</a>
+						</footer>
+					</article>
+
+					<div class="col-12">
+						<section>
+							<header class="major">
+								<h2>KEY DESIGN FEATURES</h2>
+							</header>
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<section class="box">
+										<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
+											<source src="videos/caverns/ShopShowcase.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+										<header>
+											<h3>Cutting off Level Areas</h3>
+										</header>
+										<p>The player can collect ore from crystals and enemies which can be used to: Upgrade laser, Fix your armour, Buy flares or Buy bombs.<br>Resources are limited so the player must make informed decisions on what to purchase based on their situation.</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-small">
+									<section class="box">
+										<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
+											<source src="videos/caverns/FlareShowcase.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+										<header>
+											<h3>Slowing the Monster</h3>
+										</header>
+										<p>The level is mostly dark, in order to navigate effectively, the player must use flares to light up their path.<br>Flares only last for a limited amount of time so the player must think carefully about the correct momements to use them.</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-small">
+									<section class="box">
+										<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
+											<source src="videos/caverns/CrystalShowcase.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+										<header>
+											<h3>Memory and Mastery Based Puzzles</h3>
+										</header>
+										<p>Large Crystals serve a few purposes: Give the player down time between tense moments, showcase the power of the laser, provide resources, communicate to the player where they have yet to explore.</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-small">
+									<section class="box">
+										<video style="height: 100%; width: 100%; object-fit: contain" autoplay="" muted="" loop="">
+											<source src="videos/caverns/BombsShowcase.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+										<header>
+											<h3>Environmental Hazards</h3>
+										</header>
+										<p>Mining bombs and explosive barrels can be found around the level and are dropped by the bomber enemy. These act as both a hazard to avoid and a tool for the player to use against the enemies within the level.</p>
+									</section>
+								</div>
+							</div>
+						</section>
+
+					</div>
+
+
+					<br>
+					<header class="major">
+						<h2>FULL PLAYTHROUGH</h2>
+					</header>
+					<article class="box post">
+						<iframe style="max-width: 100%; aspect-ratio: 16/9; width:auto; height:auto; margin: auto;" src="https://www.youtube.com/embed/i3MgAPjDq58?si=IE7kCXznbMrHrs7Y;autoplay=1&amp;mute=1" title="Corrupted Crystal Caverns" frameborder="0" allow="accelerometer; autoplay=1; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+					</article>
+
+				</div>
+
+			</section>
+
+			<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+
+							<!-- Copyright -->
+							<div id="copyright">
+								<ul class="links">
+									<li>Jacob Hughes</li>
+									<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
